@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { MessageComponent } from "../message/message.component";
+import { MessagesService } from "../../messages.service";
 
 @Component({
   selector: "app-messages",
@@ -6,9 +8,14 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./messages.component.css"]
 })
 export class MessagesComponent implements OnInit {
-  messages: string[];
+  messages: MessageComponent[];
 
-  constructor() {}
+  constructor(private messagesService: MessagesService) {
+    //this.messages = messagesService.messageGenerator(3);
+    // messagesService.messageGenerator(3);
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.messages = this.messagesService.messageGenerator(2);
+  }
 }

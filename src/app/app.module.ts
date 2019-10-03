@@ -21,7 +21,7 @@ import { MessagesService } from "./messages.service";
     UserComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [MyServiceService, MessagesService, MessageComponent],
+  providers: [MyServiceService, MessagesService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -2,6 +2,10 @@
 
 https://github.com/pshoemaker39/angular-examples-1
 
+## Notes:
+
+Had trouble getting message detail to display
+
 # Mydist
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.

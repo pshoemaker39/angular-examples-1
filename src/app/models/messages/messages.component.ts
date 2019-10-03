@@ -11,11 +11,9 @@ export class MessagesComponent implements OnInit {
   messages: MessageComponent[];
 
   constructor(private messagesService: MessagesService) {
-    //this.messages = messagesService.messageGenerator(3);
-    // messagesService.messageGenerator(3);
+    this.messages = this.messagesService.messageGenerator(10);
+    console.log(`Arry len ${this.messages}`);
   }
 
-  ngOnInit() {
-    this.messages = this.messagesService.messageGenerator(2);
-  }
+  ngOnInit() {}
 }

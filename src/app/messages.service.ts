@@ -17,7 +17,8 @@ export class MessagesService {
       let newMessage = new MessageComponent();
       newMessage.body = `Test ${numMessages}`;
       numMessages--;
-      console.log(newMessage);
+      //this.messageArray.push(newMessage);
+      //console.log(newMessage);
     }
     return this.messageArray;
   }
